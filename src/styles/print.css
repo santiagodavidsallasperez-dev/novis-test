@@ -1,0 +1,63 @@
+/**
+ * Estilos de impresion. Solo se aplican cuando el navegador imprime
+ * (o el usuario elige "Guardar como PDF"). Ocultan el chrome de la
+ * app (header, footer, botones) y dejan unicamente el contenido
+ * marcado como .anp-printable, con estilos limpios para papel/PDF.
+ */
+
+.anp-print-brand {
+  display: none;
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .anp-app__header,
+  .anp-app__footer,
+  .anp-no-print {
+    display: none !important;
+  }
+
+  .anp-app__main {
+    padding: 0;
+  }
+
+  .anp-page {
+    max-width: 100%;
+  }
+
+  .anp-printable .anp-card {
+    box-shadow: none;
+    border: none;
+    padding: 0;
+  }
+
+  .anp-print-brand {
+    display: block;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #0b234f;
+  }
+
+  .anp-print-brand__company {
+    font-family: var(--anp-font-display);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #0b234f;
+    margin: 0 0 2px;
+  }
+
+  .anp-print-brand__subtitle {
+    font-size: 0.8125rem;
+    color: #4a5568;
+    margin: 0;
+  }
+
+  .anp-metric,
+  .anp-range-note,
+  .anp-history-row {
+    break-inside: avoid;
+  }
+}

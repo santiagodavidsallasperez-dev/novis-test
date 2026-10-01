@@ -1,0 +1,88 @@
+:root {
+  /* Paleta tomada de aconpiexpress.com */
+  --anp-navy-950: #071a3d;
+  --anp-navy-900: #0b234f;
+  --anp-navy-800: #103069;
+  --anp-blue-700: #14458c;
+  --anp-blue-600: #1a5cb8;
+  --anp-blue-500: #2472d1;
+  --anp-blue-100: #e7f0fc;
+  --anp-blue-50: #f3f8fe;
+  --anp-cyan-400: #29b6e8;
+
+  --anp-ink: #0c1524;
+  --anp-text-secondary: #4a5568;
+  --anp-text-muted: #8792a2;
+
+  --anp-surface: #ffffff;
+  --anp-surface-alt: #f6f9fd;
+  --anp-border: #dfe6f0;
+  --anp-border-strong: #b9c8dd;
+
+  --anp-success: #1f9d63;
+  --anp-warning-bg: #fff4dc;
+  --anp-warning-border: #eac878;
+  --anp-warning-text: #8a5a00;
+  --anp-danger: #c23b3b;
+
+  --anp-radius-sm: 8px;
+  --anp-radius-md: 12px;
+  --anp-radius-lg: 20px;
+
+  --anp-font-display: 'Sora', 'Manrope', sans-serif;
+  --anp-font-body: 'Manrope', sans-serif;
+
+  --anp-shadow-card: 0 1px 2px rgba(7, 26, 61, 0.04), 0 8px 24px rgba(7, 26, 61, 0.06);
+  --anp-shadow-lift: 0 12px 32px rgba(7, 26, 61, 0.14);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--anp-font-body);
+  color: var(--anp-ink);
+  background: var(--anp-surface-alt);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3 {
+  font-family: var(--anp-font-display);
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+}
+
+input, select {
+  font-family: inherit;
+}
+
+::selection {
+  background: var(--anp-blue-100);
+  color: var(--anp-navy-900);
+}
+
+/* Barra de scroll discreta */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--anp-border-strong);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}

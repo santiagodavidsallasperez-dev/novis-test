@@ -1,0 +1,140 @@
+.anp-result-hero {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 1.5rem;
+}
+
+.anp-result-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--anp-blue-600), var(--anp-navy-900));
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--anp-font-display);
+  font-weight: 700;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.anp-result-eyebrow {
+  font-size: 0.8125rem;
+  color: var(--anp-text-secondary);
+  margin: 0 0 2px;
+}
+
+.anp-result-name {
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: var(--anp-navy-900);
+}
+
+.anp-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 1.75rem;
+}
+
+.anp-metric {
+  background: var(--anp-surface-alt);
+  border: 1px solid var(--anp-border);
+  border-radius: var(--anp-radius-md);
+  padding: 16px 14px;
+  text-align: center;
+}
+
+.anp-metric__label {
+  font-size: 0.75rem;
+  color: var(--anp-text-secondary);
+  margin: 0 0 6px;
+  font-weight: 600;
+}
+
+.anp-metric__value {
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: var(--anp-navy-900);
+  margin: 0;
+}
+
+.anp-metric__value--lg {
+  font-size: 1.75rem;
+  color: var(--anp-blue-600);
+}
+
+.anp-range-note {
+  background: var(--anp-blue-50);
+  border: 1px solid var(--anp-blue-100);
+  border-radius: var(--anp-radius-md);
+  padding: 14px 16px;
+  font-size: 0.875rem;
+  color: var(--anp-navy-900);
+  line-height: 1.55;
+  margin-bottom: 1.75rem;
+}
+
+.anp-section-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--anp-navy-900);
+  margin: 0 0 1rem;
+}
+
+.anp-area-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 1.75rem;
+}
+
+.anp-result-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 560px) {
+  .anp-metrics-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.anp-thankyou {
+  text-align: center;
+  padding: 1rem 0 1.5rem;
+}
+
+.anp-thankyou__avatar {
+  margin: 0 auto 1rem;
+  width: 64px;
+  height: 64px;
+  font-size: 1.375rem;
+}
+
+.anp-thankyou__eyebrow {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--anp-blue-600);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin: 0 0 8px;
+}
+
+.anp-thankyou__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--anp-navy-900);
+  margin: 0 0 12px;
+}
+
+.anp-thankyou__body {
+  font-size: 0.9375rem;
+  color: var(--anp-text-secondary);
+  line-height: 1.6;
+  max-width: 40ch;
+  margin: 0 auto;
+}

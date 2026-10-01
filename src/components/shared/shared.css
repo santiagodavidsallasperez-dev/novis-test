@@ -1,0 +1,126 @@
+.anp-card {
+  background: var(--anp-surface);
+  border: 1px solid var(--anp-border);
+  border-radius: var(--anp-radius-lg);
+  box-shadow: var(--anp-shadow-card);
+  padding: 2rem;
+}
+
+@media (max-width: 560px) {
+  .anp-card {
+    padding: 1.5rem 1.25rem;
+    border-radius: var(--anp-radius-md);
+  }
+}
+
+.anp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  height: 44px;
+  padding: 0 1.25rem;
+  border-radius: var(--anp-radius-sm);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: transform 0.12s ease, background 0.15s ease, border-color 0.15s ease;
+}
+
+.anp-btn:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.anp-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.anp-btn--primary {
+  background: var(--anp-blue-600);
+  color: #fff;
+}
+.anp-btn--primary:hover:not(:disabled) {
+  background: var(--anp-blue-700);
+}
+
+.anp-btn--secondary {
+  background: var(--anp-navy-900);
+  color: #fff;
+}
+.anp-btn--secondary:hover:not(:disabled) {
+  background: var(--anp-navy-950);
+}
+
+.anp-btn--ghost {
+  background: transparent;
+  border-color: var(--anp-border-strong);
+  color: var(--anp-navy-900);
+}
+.anp-btn--ghost:hover:not(:disabled) {
+  background: var(--anp-blue-50);
+  border-color: var(--anp-blue-600);
+}
+
+.anp-btn--danger {
+  background: var(--anp-danger);
+  color: #fff;
+}
+.anp-btn--danger:hover:not(:disabled) {
+  background: #a52f2f;
+}
+
+.anp-btn--full {
+  width: 100%;
+}
+
+.anp-progress {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.anp-progress__label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8125rem;
+  color: var(--anp-text-secondary);
+}
+
+.anp-progress__track {
+  height: 8px;
+  border-radius: 999px;
+  background: var(--anp-blue-50);
+  overflow: hidden;
+}
+
+.anp-progress__fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--anp-blue-600), var(--anp-cyan-400));
+  transition: width 0.25s ease;
+}
+
+.anp-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.anp-brand__text {
+  font-family: var(--anp-font-display);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--anp-navy-900);
+  letter-spacing: -0.01em;
+}
+
+.anp-brand__text strong {
+  font-weight: 700;
+  color: var(--anp-blue-600);
+}
+
+.anp-brand--sm .anp-brand__text {
+  font-size: 0.875rem;
+}

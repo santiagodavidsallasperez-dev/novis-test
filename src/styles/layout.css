@@ -1,0 +1,41 @@
+.anp-app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.anp-app__header {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--anp-border);
+  background: #fff;
+}
+
+.anp-app__header-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.anp-app__main {
+  flex: 1;
+  padding: 2rem 1rem 3rem;
+}
+
+.anp-page {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.anp-app__footer {
+  padding: 1.25rem 1.5rem;
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--anp-text-muted);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.anp-app__footer p {
+  margin: 0;
+}
